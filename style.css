@@ -139,12 +139,12 @@ position: relative;
         z-index: 100;
         border-radius: 5px;
         font-size: 2rem;
-        display:none; 
+        
         
     }
-    .menu:active{
+    /* .menu:active{
         display: block;
-    }
+    } */
     .icon1{
         display: block;
         font-size: 3rem;
