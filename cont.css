@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #CAEBF2;
+}
+
+.bloc {
+   
+    width: 100%;
+    height: 419px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.left {
+    text-align: center;
+    
+    height: 100%;
+    width: 100%;
+
+}
+.input{
+    padding-top: 7rem;
+    padding-left: 1rem;
+}
+
+.right {
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h2 {
+    padding-top: 5rem;
+}
+.input input{
+    height: 4rem;
+    width: 30rem;
+    font-size: 2rem;
+
+}
+.nom{
+    margin-right: 1rem;
+    margin-bottom: 5px;
+}
+.tel{
+    margin-right: 1rem;
+    margin-bottom: 5px;
+}
+.objet{
+    margin-left: 1rem;
+    height: 4rem;
+    width: 61.5rem;
+    font-size: 2rem; 
+    margin-bottom: 5px
+}
+textarea{
+    margin-left: 1rem;
+    height: 10rem;
+    
+    font-size: 2rem;
+    margin-bottom: 15px ;
+    resize:none;
+}
+.msg{
+    width: 61.5rem;
+}
+.btt{
+    height: 4rem;
+    width: 30rem;
+    font-size: 3rem;
+    margin-left: 15rem;
+    margin-bottom: 2.2rem;
+
+}
+.btt:hover{
+background-color: #CAEBF2;
+color: white;
+}
+input{
+    border-top: none;
+    border-right: none;
+    border-left: none ;
+    background-color: #CAEBF2;
+    color: black;
+}
+input:hover{
+    border: solid;
+    
+}
+@media screen and (max-width:900px){
+    .bloc{
+        width:40% ;
+        height: 555px;
+        margin-bottom: 25px;
+    }
+    input{
+        font-size: 0.7rem;
+    }
+    .msg{
+        width: 300px;
+        height: 11rem;
+        font-size: 1rem;
+    }
+    .objet{
+        width: 300px;
+    }
+    .btt{
+        width: 8rem;
+        font-size: 1.5rem;
+        height: 3rem;
+        margin-left: 11rem;
+    }
+    .input{
+        margin-top: -3rem;
+    }
+    
+}
