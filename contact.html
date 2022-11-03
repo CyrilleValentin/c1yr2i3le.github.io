@@ -14,18 +14,18 @@
 
 <body>
     <div class="promo">
-        <span>20% de réduction sur tous nos produits</span>
+        <marquee behavior="" direction="left"><p>😜<span>20% de réduction sur tous nos produits</span>😜</p></marquee>
     </div>
     <header class="header">
         <nav class="nav-container">
             <div class="navigation d-flex">
-                <div class="icon1">
+                <div class="icon1"  onclick="afficher()">
                     <i class='bx bx-menu'></i>
                 </div>
                 <div class="logo">
                     <a href="#"><span>S</span>neakers' Land</a>
                 </div>
-                <div class="menu">
+                <div class="menu" id="menu">
                     <nav>
                         <ul class="nav-list d-flex">
                             <a href="index.html" class="nav-link">
@@ -52,8 +52,8 @@
 
                 </div>
             </div>
-            <div class="bloc">
-                <div class="left">
+             <div class="bloc">
+              <!--  <div class="left">
                     <div class="logo">
                         <h2><span>NOUS</span> CONTACTER </h2>
                         <br>
@@ -63,8 +63,8 @@
                         <br>
                         <p>+22893064347</p>
                     </div>
-                </div>
-                <div class="right">
+                </div> -->
+                 <div class="right">
                     <div class="input">
                         <input class="nom" type="text" placeholder="Nom">
                         <input class="mail"    type="email" name="email" id="" placeholder="E-mail">
@@ -72,9 +72,9 @@
                         <input class="adresse" type="text" placeholder="Adresse">
                     </div>      
                     <input class="objet" type="text" placeholder="Objet">
-                    <input class="msg" type="text" placeholder="Rédigez votre message ici...">
+                    <textarea class="msg" rows="5"  placeholder="Rédigez votre message ici..."></textarea> 
                     <button class="btt">Envoyer</button>
-                </div>
+                </div> 
             </div>
         </nav>
     </header>
@@ -84,14 +84,15 @@
         </div>
         <p>Cyrillekyrillos6@gmail.com</p>
         <div class="reseau">
-            <a href="https://twitter.com/KyrillosCyrille"><i class='bx bxl-twitter'></i></a>
-            <a href="https://www.facebook.com/cyrille.adjewoda.7"> <i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/cyrille_valentin/"> <i class='bx bxl-instagram'></i></a>
-            <a href="https://wa.me/qr/CSAL7VI6E7HXF1"> <i class='bx bxl-whatsapp'></i></a>
+            <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.facebook.com"> <i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com"> <i class='bx bxl-instagram'></i></a>
+            <a href="https:/#"> <i class='bx bxl-whatsapp'></i></a>
 
         </div>
         <p>© 2022 par Cyrille ADJEWODA</p>
     </footer>
+    <script type="text/javascript" src ='script.js'> </script>
 </body>
 
 </html>

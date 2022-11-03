@@ -35,7 +35,7 @@ image{
     max-width: 100%;
 }
 .promo{
-    background-color: var(--bleu);
+   background-color: var(--bleu);
     text-align: center;
     color: var(--blanche);
     padding: 0.5rem 0 ;
@@ -86,7 +86,10 @@ nav ul li{
     cursor: pointer;
 }
 nav ul li:hover{
-    color: var(--bleu);
+    color: var(--blanche);
+    background-color: var(--bleu);
+    border-radius: 10px;
+    background-size: 6rem;
 }
 .icons> div{
     font-size: 2rem;
@@ -119,22 +122,31 @@ position: relative;
     margin-right: 8px;
 }
 
-   @media only screen and (max-width:768px) {
+   @media only screen and (max-width:760px) {
     .navigation{
         padding: 1rem 0;
     }
     .menu{
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 80%;
-        background-color: var(--blanche);
-        height: 100%;
+        position: absolute;
+        top: 13%;
+        left: 15px;
+        display: none;
+        width: 30%;
+        background-color:var(--bleu);
+        height: 30%;
         max-width: 45rem;
         box-shadow: 0 5px 15px rgba(0,0,0,0,1);
         transition: all ease-in-out;
         z-index: 100;
+        border-radius: 5px;
+        font-size: 2rem;
+        color: white;
+        
     }
+    .menu.show{
+        display: static;
+    }
+    
     .icon1{
         display: block;
         font-size: 3rem;
@@ -160,25 +172,12 @@ position: relative;
         height: 6rem;
         color: var(--blanche);
     }
-    .top span{
-        display: flex;
-        position: absolute;
-        align-items: center;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 1rem;
-        font-size:2rem ;
-        cursor: pointer;
-
-    }
-    .top span i{
-        font-size: 3rem;
-    }
     
     .nav-list{
         flex-direction: column;
         align-items: flex-start;
         padding: 2rem 0;
+       /*  margin-left: -100%; */
     }
     .nav-item{
         margin: 0 0 2rem 0;
@@ -186,7 +185,11 @@ position: relative;
     .nav-link{
         padding: 0.7rem;
     }
+
    }
+   /* .nav-list.mobile-menu{
+    margin-left: 0;
+   } */
    .banniere{
     height:700px ;
     background-color:#CAEBF2;
@@ -393,6 +396,7 @@ footer{
     text-align: center;
     color: var(--blanche);
     background-color:#000000 ;
+    height: 15rem;
 }
 .reseau{
     font-size: 3rem;

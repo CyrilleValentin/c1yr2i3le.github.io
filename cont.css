@@ -1,27 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
 body {
     width: 100%;
     height: 100%;
+    background-color: #CAEBF2;
 }
 
 .bloc {
-    background-color: #CAEBF2;
+   
     width: 100%;
-    height: 63vh;
+    height: 419px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+   
 }
 
 .left {
     text-align: center;
     
     height: 100%;
-    width: 50%;
+    width: 100%;
 
 }
 .input{
@@ -35,6 +38,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 h2 {
@@ -61,18 +65,23 @@ h2 {
     font-size: 2rem; 
     margin-bottom: 5px
 }
-.msg{
+textarea{
     margin-left: 1rem;
     height: 10rem;
-    width: 61.5rem;
+    
     font-size: 2rem;
-    margin-bottom: 15px 
+    margin-bottom: 15px ;
+    resize:none;
+}
+.msg{
+    width: 61.5rem;
 }
 .btt{
     height: 4rem;
     width: 30rem;
     font-size: 3rem;
     margin-left: 15rem;
+    margin-bottom: 2.2rem;
 
 }
 .btt:hover{
@@ -89,4 +98,35 @@ input{
 input:hover{
     border: solid;
     
+}
+@media screen and (max-width:900px){
+    .bloc{
+        width:40% ;
+        height: 555px;
+        margin-bottom: 25px;
+    }
+    input{
+        font-size: 0.7rem;
+    }
+    .msg{
+        width: 300px;
+        height: 11rem;
+        font-size: 1rem;
+    }
+    .objet{
+        width: 300px;
+    }
+    .btt{
+        width: 8rem;
+        font-size: 1.5rem;
+        height: 3rem;
+        margin-left: 11rem;
+    }
+    .input{
+        margin-top: -3rem;
+    }
+    
+}
+.navigation{
+    background-color: white;
 }
