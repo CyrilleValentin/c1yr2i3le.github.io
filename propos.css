@@ -3,12 +3,9 @@
     padding: 0;
     
 }
-html {
+body{
     width: 100%;
     height: 100%;
-} 
-body{
-    background-color:#CAEBF2; 
 }
 .cont{
     padding-top: 60px;
@@ -17,13 +14,4 @@ body{
     width: 100%;
     height: 63vh;
     
-}
-@media screen and (max-width:900px){
-    .cont{
-        width:90% ;
-        height: 555px;
-        margin-bottom: 25px;
-        font-size: 1.5rem;
-        margin-left: 2rem;
-    }
 }

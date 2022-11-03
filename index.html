@@ -13,7 +13,7 @@
 
 <body>
     <div class="promo">
-        <marquee behavior="scroll" direction="right"><p>😜<span>20% de réduction sur tous nos produits</span>😜</p></marquee>
+        <span>20% de réduction sur tous nos produits</span>
     </div>
     <header class="header">
         <nav class="nav-container">
@@ -24,9 +24,12 @@
                 <div class="logo">
                     <a href="#"><span>S</span>neakers' Land</a>
                 </div>
-                <div class="menu" id="menu">
+                <div class="menu">
+                   <div class="top">
+                        <span class="fermer">Fermer <i class="bx bx-x" i></span>
+                    </div>
                     <nav>
-                         <ul  class="nav-list d-flex">
+                         <ul class="nav-list d-flex">
                             <a href="index.html" class="nav-link"><li class="nav-items"> Accueil</li></a>
                              <a href="boutique.html" class="nav-link"><li class="nav-items"></li>Boutique</li></a>
                              <a href="Propos.html" class="nav-link"><li class="nav-items">A propos</li></a>
@@ -186,22 +189,14 @@
     </div>
     <p>Cyrillekyrillos6@gmail.com</p>
     <div class="reseau">
-        <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
-       <a href="https://www.facebook.com"> <i class='bx bxl-facebook'></i></a>
-       <a href="https://www.instagram.com"> <i class='bx bxl-instagram'></i></a>
-       <a href="https://#"> <i class='bx bxl-whatsapp'></i></a>
+        <a href="https://twitter.com/KyrillosCyrille"><i class='bx bxl-twitter'></i></a>
+       <a href="https://www.facebook.com/cyrille.adjewoda.7"> <i class='bx bxl-facebook'></i></a>
+       <a href="https://www.instagram.com/cyrille_valentin/"> <i class='bx bxl-instagram'></i></a>
+       <a href="https://wa.me/qr/CSAL7VI6E7HXF1"> <i class='bx bxl-whatsapp'></i></a>
         
     </div>
     <p>© 2022 par Cyrille ADJEWODA</p>
 </footer>
-<script>
-    const menuHamburger = document.querySelector(".icon1")
-    const navLinks = document.querySelector(".nav-list")
-
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
-</script>
 </body>
 
 </html>
